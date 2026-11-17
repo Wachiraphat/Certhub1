@@ -1,0 +1,9 @@
+cd ~/certhub-app
+nohup python3 app.py > app.log 2>&1 &
+
+mysql -h <RDS_ENDPOINT> -P 3306 -u admin -p tracker_db -e "UPDATE courses SET current_price = target_price, status = 'Monitoring';"
+
+{
+  "test_mode": true,
+  "discount_percent": 40
+}
