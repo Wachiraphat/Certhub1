@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 # ================= 1. กำหนดค่าเชื่อมต่อ Database RDS =================
-RDS_HOST = "วาง-ENDPOINT-ของ-RDS"
+RDS_HOST = "YOUR_RDS_HOST"
 RDS_USER = "admin"
-RDS_PASS = "รหัสผ่าน-RDS-ของคุณ"
+RDS_PASS = "YOUR_RDS_PASS"
 RDS_DB   = "tracker_db"
 
 def get_connection():

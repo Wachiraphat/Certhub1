@@ -8,13 +8,13 @@ import requests
 from bs4 import BeautifulSoup
 
 # ======================= ตั้งค่าการเชื่อมต่อ =======================
-RDS_HOST = "วาง-ENDPOINT-ของ-RDS"
+RDS_HOST = "YOUR_RDS_HOST"
 RDS_USER = "admin"
-RDS_PASS = "รหัสผ่าน-RDS-ของคุณ"
+RDS_PASS = "YOUR_RDS_PASS"
 RDS_DB   = "tracker_db"
 
-S3_BUCKET_NAME = "ชื่อ-S3-BUCKET-ของคุณ"       # ใส่ชื่อ เช่น certhub-logs-xxx-us-east-1-an
-SNS_TOPIC_ARN  = "วาง-TOPIC-ARN-ของ-SNS"     # เช่น arn:aws:sns:us-east-1:xxxxxx:certhub-price-alert
+S3_BUCKET_NAME = "S3_BUCKET_NAME"       # ใส่ชื่อ เช่น certhub-logs-xxx-us-east-1-an
+SNS_TOPIC_ARN  = "SNS_TOPIC_ARN"     # เช่น arn:aws:sns:us-east-1:xxxxxx:certhub-price-alert
 # =================================================================
 
 

@@ -4,10 +4,10 @@ import pymysql
 app = Flask(__name__)
 
 # กำหนดค่าเชื่อมต่อ Database RDS
-RDS_HOST = "RDS_Endpoint ของคุณ"
+RDS_HOST = "YOUR_RDS_HOST"
 RDS_USER = "admin"
-RDS_PASS = "password ของคุณ"  # ตรวจสอบรหัสผ่าน RDS ของคุณ
-RDS_DB = "tracker_db"
+RDS_PASS = "YOUR_RDS_PASS"
+RDS_DB   = "tracker_db"
 
 def get_db_connection():
     return pymysql.connect(
